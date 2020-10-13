@@ -17,3 +17,20 @@ This project is about automatically controlling the Railway gates for incomming 
 •	Use of Panic Button that will be pressed in an emergency situation.
 •	Use of Buzzer to alert the users about upcoming trains and closure of gates.
 •	Use of IoT through Wi-Fi for cloud storage, such as,ThingSpeak.
+
+List Of Components:
+1. Beaglebone Black
+2. Ultrasonic Sensors
+3. Wifi Module (ESP-8266)
+4. Arduino Uno
+5. 5V Stepper Motor with ULN2003A
+6. 16×2 LCD Display
+7. Buzzer
+8. Push Button
+9. Toy Train
+10. Soldering Iron Kit with ON/Off Switch, Welding Tool with Digital Multimeter
+11. TRIAD Wall Adaptor and power Supply
+12. Zero PCB Board 
+13. Jumper Wires
+
+
