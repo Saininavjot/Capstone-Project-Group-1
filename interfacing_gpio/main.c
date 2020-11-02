@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include "gpio_control.h"
 #include <unistd.h>
-#include <string.h>
+
 
 #define BUZZER_GPIO_PIN 45 //port 8 pin 11 of BBB
 #define SWITCH_GPIO_PIN 44 //port 8 pin 12 of BBB
