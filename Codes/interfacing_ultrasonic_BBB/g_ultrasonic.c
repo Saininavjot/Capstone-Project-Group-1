@@ -10,7 +10,7 @@
 #include <unistd.h>  //header file that provides access to the POSIX operating system API
 #include <stdlib.h>  //provide functions involving memory allocation, process control and others.
 
-clock_t before, end, distance; // To store Time to calculate distance
+clock_t before_pulse, end_pulse,difference, distance; // To store Time to calculate distance
 int main(void)
 {
   iolib_init();  // Initialize the IOBB Library
@@ -36,26 +36,26 @@ int main(void)
     usleep(10);
     pin_low(8, 7);
 
-    before = clock(); //Current Clock Time
+
     while(is_low(8, 8))  // Waiting for Echo Pulse to starts
     	{
-
+    	 before_pulse = clock(); //Current Clock Time
     	}
 
     while(is_high(8, 8)) // Waiting and reading time of Echo pulse
     	{
-    		end = clock();
+    		end_pulse = clock();
     	}
 
-    distance = end - before; // reading absolute time of Echo Pulse by distance
-    distance = distance/30; // calculating approximate value in centimeters
+    difference = end_pulse - before_pulse; // reading absolute time of Echo Pulse by distance
+    distance = (difference/2)/30; // calculating approximate value in centimeters
 
 
-   // If distance is between 80-90cms....approximate distance of train from sensor
-    if ( distance>80 && distance <90)
+   // If distance is in the range 4-6 cms....approximate distance of train from sensor
+    if ( distance>= 4 && distance =< 6)
     	{
     		printf("train arriving......\r\n");
-    		printf("Distance= %d\r\n", distance);
+    		printf("Distance= %d \r\n", distance);
     		printf("\r\n", distance);
     	}
 
@@ -68,23 +68,23 @@ int main(void)
     pin_high(8,9);  // Trigger Ultrasonic Sensor
     usleep(10);
     pin_low(8, 9);
-    before = clock(); //load current Clock Time
+
 
     while(is_low(8, 10))  // Waiting for Echo Pulse to starts
     	{
-
+    		before_pulse = clock(); //load current Clock Time
     	}
     while(is_high(8, 10)) // waiting and reading time of Echo pulse
     	{
 
-    		end = clock();
+    		end_pulse = clock();
     	}
 
-    distance = end - before;// reading absolute time of Echo Pulse by distance
-    distance = distance/30; // calculating approximate value in centimeters
+    difference = end_pulse - before_pulse;// reading absolute time of Echo Pulse by distance
+    distance = (difference/2)/30; // calculating approximate value in centimeters
 
-    // If distance is between 80-90cms....approximate distance of train from sensor
-    if (distance >80 && distance <90)
+    // If distance is in the range 4-6 cms....approximate distance of train from sensor
+    if (distance >= 4 && distance =< 6)
     	{
     		printf("train Departing......\r\n");
     		printf("Distance= %d\r\n", distance);
@@ -99,3 +99,4 @@ int main(void)
   iolib_free();
   return(0);
 }
+
