@@ -1,6 +1,5 @@
 /*
  * gpio_control.c
- *
  *  Created on: Oct 30, 2020
  *      Author: ramneet
  */
