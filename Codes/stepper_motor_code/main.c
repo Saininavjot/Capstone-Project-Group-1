@@ -76,9 +76,6 @@ void rotate_motor_colockwise(int no_of_steps) // function to rotate motor clock 
             gpio_control_write_value(MOTOR_PIN4, 0); // D=0
             usleep(timeout);
         }
-
-//    gpio_control_write_value(MOTOR_PIN1, 1);
-  //  gpio_control_write_value(MOTOR_PIN2, 1);
 }
 
 int main(void)
