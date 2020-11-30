@@ -1,11 +1,10 @@
-#include <stdio.h>
-#include <unistd.h>
-#include <pthread.h>
-#include <malloc.h>
-#include <pthread.h>
-#include <mqueue.h>
+#include <stdio.h>    // defines three variable types, several macros, and various functions for performing input and output.
+#include <unistd.h>   // header file that provides access to the POSIX operating system API.
+#include <pthread.h>  // header/include file and a thread library 
+#include <malloc.h>   // defines non-standard functions like mallinfo
+#include <mqueue.h>   // header shall define the mqd_t type, which is used for message queue descriptors.
 
-#include <iobb.h>
+#include <iobb.h>     // allows the access to GPIOs of beaglebone black 
 
 #include "main.h"
 #include "peripherals_manager.h"
