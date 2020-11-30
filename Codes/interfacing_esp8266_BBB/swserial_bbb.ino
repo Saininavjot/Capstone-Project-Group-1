@@ -1,12 +1,9 @@
-#include <ESP8266WiFi.h>
-#include <WiFiClient.h>
-#include <ESP8266WebServer.h>
-#include <ESP8266mDNS.h>
-#include <SoftwareSerial.h>
+#include <ESP8266WiFi.h>  //library used for accessing functions to access the WiFi
+#include <SoftwareSerial.h>     //allow serial communication on other digital pins of the ESP9266
 
 #ifndef D5
-#define D5 (14)
-#define D6 (12)
+#define D5 (14)    //used as RX
+#define D6 (12)    //used as TX
 #define TX (1)
 #endif
 #define BAUD_RATE 9600
@@ -51,18 +48,18 @@ void loop() {
   // put your main code here, to run repeatedly:
   if(swSer.available())
   {
- val = swSer.read();
+ val = swSer.read();     //reading serial data
  yield(); 
- if(val == 65)
+ if(val == 65)   //ASCII of character "A"
  {
     digitalWrite(ledPin, LOW);
   
-     long rssi = WiFi.RSSI();
-     Serial.print("RSSI:");
+     long rssi = WiFi.RSSI();     //function to read signal strength of wifi in dBm
+     Serial.print("RSSI:");     //reading signal strength of wifi
      Serial.println(rssi);
  }
  
- else if (val == 66)
+ else if (val == 66)      //ASCII of character "B"
  {
    digitalWrite(ledPin,HIGH);
  }
