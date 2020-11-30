@@ -1,0 +1,11 @@
+How to send MMS using GSM/GPRS module
+
+Multimedia Messaging Service (MMS) is a standard way to send messages that include multimedia content to and from mobile phones over a cellular network. Users and providers may refer to such a message as a PXT, a picture message, or a multimedia message. The MMS standard extends the core SMS (Short Message Service) capability, allowing the exchange of text messages greater than 160 characters in length. Unlike text-only SMS, MMS can deliver a variety of media, including up to forty seconds of video, one image, a slideshow of multiple images, or audio.
+
+To send a Multimedia file, you must have a;
+
+1. GPRS enabled module, (for this tutorial, we will be using SIM900A)
+2. Microcontroller whose RAM is large enough to handle the multimedia file size (image-jpeg)
+3. Jpeg camera module (Sparkfun CMOS camera module or OV2640 Camera module)
+4. A network SIM card.
+
