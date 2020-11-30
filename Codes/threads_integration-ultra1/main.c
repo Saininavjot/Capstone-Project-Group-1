@@ -5,6 +5,8 @@
 #include <pthread.h>
 #include <mqueue.h>
 
+#include <iobb.h>
+
 #include "main.h"
 #include "peripherals_manager.h"
 #include "common.h"
@@ -13,6 +15,7 @@
 #include "buzzer.h"
 #include "distance_sensor.h"
 #include "uart_control.h"
+#include "stepper_motor.h"
 
 // macros and variables
 
@@ -45,7 +48,7 @@ static void clean_up_system(void)
 static results panic_button_pressed(void)
 {
     results res = ERROR;
-    printf("[%s][%d] panic button pressed", __FILE__, __LINE__);
+    printf("[%s][%d] panic button pressed\r\n", __FILE__, __LINE__);
     
     // turn the buzzer on for 2 sec
     {
@@ -62,14 +65,15 @@ static results panic_button_pressed(void)
 
 static results panic_button_released(void)
 {
-    printf("[%s][%d] panic button pressed", __FILE__, __LINE__);
+    printf("[%s][%d] panic button pressed\r\n", __FILE__, __LINE__);
     return SUCCESS;
 }
 
 static results train_arrived(void)
 {
     results res = ERROR;
-    printf("[%s][%d] buzzer train arr\r\n", __FILE__, __LINE__);
+    motor_thread_msg gate_opr;
+    printf("[%s][%d] train arr updating other threads \r\n", __FILE__, __LINE__);
     
     // turn the buzzer on for 500m sec
     {
@@ -85,13 +89,18 @@ static results train_arrived(void)
         send_msg_uart(ESP_UART, uart_msg_train_arrive, 1);
     }
     
+    gate_opr.state = gate_state_open;
+    gate_opr.delay = 0;
+
+    motor_thread_push_to_queue(gate_opr);
     return res;
 }
 
 static results train_departed(void)
 {
     results res = ERROR;
-    printf("[%s][%d] buzzer train dep\r\n", __FILE__, __LINE__);
+    motor_thread_msg gate_opr;
+    printf("[%s][%d] train dep updating other threads\r\n", __FILE__, __LINE__);
     
     // turn the buzzer on for 500m sec
     {
@@ -107,6 +116,10 @@ static results train_departed(void)
         send_msg_uart(ESP_UART, uart_msg_train_depart, 1);
     }
     
+    gate_opr.state = gate_state_close;
+    gate_opr.delay = 0;
+
+    motor_thread_push_to_queue(gate_opr);
     return res;
 }
 
@@ -248,13 +261,9 @@ results main_thread_push_to_queue(main_thread_msg buffer)
 int main()
 {
     results res;
-    int data = 200;
-    int id = 0;
-    main_thread_msg msg_test;
-    
     // clean up pins before reinitializing them for our project
     clean_up_system();
-    
+    iolib_free();
     // initialize the pm_thread and queue
     res = main_thread_init();
     printf("[%s][%d] main thread init with %u\r\n", __FILE__, __LINE__, res);
@@ -269,7 +278,10 @@ int main()
 
     // initialize ultrasonic sensor thread
     res = distance_sensor_thread_init();
-    printf("[%s][%d] buzzer thread init with res:%u\r\n", __FILE__, __LINE__, res);
+    printf("[%s][%d] distance sensor thread init with res:%u\r\n", __FILE__, __LINE__, res);
+
+    res = motor_thread_init();
+    printf("[%s][%d] motor thread init with res:%u\r\n", __FILE__, __LINE__, res);
 
     // push an event in panic thread every 500ms to read button value
     while (1)

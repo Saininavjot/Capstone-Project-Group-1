@@ -1,0 +1,653 @@
+[gpio_control.c][220] free pin 44
+[gpio_control.c][220] free pin 45
+[main.c][203] queue create success
+[main.c][206] creating main thread 
+[main.c][217] success creating thread
+[main.c][260] main thread init with 1
+[gpio_control.c][48] export success
+[gpio_control.c][59] success exporting pin:44
+[gpio_control.c][83] success open dir file for pin:44
+[push_button.c][65] creating push button thread 
+[push_button.c][76] success creating thread
+[main.c][264] push button thread init with res:1
+[gpio_control.c][48] export success
+[gpio_control.c][59] success exporting pin:45
+[gpio_control.c][94] success open dir file for pin:45
+[buzzer.c][107] queue create success
+[buzzer.c][110] creating push button thread 
+[buzzer.c][121] success creating thread
+[main.c][268] buzzer thread init with res:1
+[distance_sensor.c][139] creating dist sensor thread 
+[distance_sensor.c][150] success creating thread
+inside main thread
+[push_button.c][21] inside push button thread
+[gpio_control.c][186] val is 0
+[buzzer.c][31] inside buzzer button thread
+[distance_sensor.c][30] inside distance sensor thread
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 1
+[main.c][148] panic button activity val:1 
+[main.c][48] panic button pressed[uart_control.c][37] wrting train arrive to esp
+[buzzer.c][64] turn the buzzer on 
+[main.c][176] msg id: 1, data: 0 pushed:1 processed :1
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[main.c][148] panic button activity val:0 
+[main.c][65] panic button pressed[main.c][176] msg id: 0, data: 0 pushed:2 processed :2
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[gpio_control.c][186] val is 0
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[gpio_control.c][186] val is 0
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[main.c][159] sensor has detected train arrive 
+[main.c][72] buzzer train arr
+[buzzer.c][64] turn the buzzer on 
+[uart_control.c][27] wrting train arrive to esp
+[distance_sensor.c][64]train arriving......
+[distance_sensor.c][65]Distance= 4 
+
+[distance_sensor.c][112]Change last known state for sensor 2
+[main.c][176] msg id: 4, data: 0 pushed:3 processed :3
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[main.c][164] sensor has detected train depart 
+[main.c][94] buzzer train dep
+[buzzer.c][64] turn the buzzer on 
+[uart_control.c][32] wrting train arrive to esp
+[distance_sensor.c][105]train Departing......
+[distance_sensor.c][106]Distance= 6
+
+[main.c][176] msg id: 6, data: 0 pushed:4 processed :4
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[gpio_control.c][186] val is 0
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[main.c][159] sensor has detected train arrive 
+[main.c][72] buzzer train arr
+[buzzer.c][64] turn the buzzer on 
+[uart_control.c][27] wrting train arrive to esp
+[distance_sensor.c][64]train arriving......
+[distance_sensor.c][65]Distance= 5 
+
+[distance_sensor.c][112]Change last known state for sensor 2
+[main.c][176] msg id: 5, data: 0 pushed:5 processed :5
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[gpio_control.c][186] val is 0
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[main.c][159] sensor has detected train arrive 
+[main.c][72] buzzer train arr
+[buzzer.c][64] turn the buzzer on 
+[uart_control.c][27] wrting train arrive to esp
+[distance_sensor.c][64]train arriving......
+[distance_sensor.c][65]Distance= 6 
+
+[main.c][176] msg id: 6, data: 0 pushed:6 processed :6
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[main.c][164] sensor has detected train depart 
+[main.c][94] buzzer train dep
+[buzzer.c][64] turn the buzzer on 
+[uart_control.c][32] wrting train arrive to esp
+[distance_sensor.c][105]train Departing......
+[distance_sensor.c][106]Distance= 4
+
+[main.c][176] msg id: 4, data: 0 pushed:7 processed :7
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[gpio_control.c][186] val is 0
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[main.c][164] sensor has detected train depart 
+[main.c][94] buzzer train dep
+[buzzer.c][64] turn the buzzer on 
+[uart_control.c][32] wrting train arrive to esp
+[distance_sensor.c][105]train Departing......
+[distance_sensor.c][106]Distance= 5
+
+[main.c][176] msg id: 5, data: 0 pushed:8 processed :8
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[main.c][164] sensor has detected train depart 
+[main.c][94] buzzer train dep
+[buzzer.c][64] turn the buzzer on 
+[uart_control.c][32] wrting train arrive to esp
+[distance_sensor.c][105]train Departing......
+[distance_sensor.c][106]Distance= 6
+
+[main.c][176] msg id: 6, data: 0 pushed:9 processed :9
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[main.c][164] sensor has detected train depart 
+[main.c][94] buzzer train dep
+[buzzer.c][64] turn the buzzer on 
+[uart_control.c][32] wrting train arrive to esp
+[distance_sensor.c][105]train Departing......
+[distance_sensor.c][106]Distance= 4
+
+[main.c][176] msg id: 4, data: 0 pushed:0 processed :0
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[main.c][159] sensor has detected train arrive 
+[main.c][72] buzzer train arr
+[buzzer.c][64] turn the buzzer on 
+[uart_control.c][27] wrting train arrive to esp
+[distance_sensor.c][64]train arriving......
+[distance_sensor.c][65]Distance= 4 
+
+[distance_sensor.c][112]Change last known state for sensor 2
+[main.c][176] msg id: 4, data: 0 pushed:1 processed :1
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[gpio_control.c][186] val is 0
+[main.c][164] sensor has detected train depart 
+[main.c][94] buzzer train dep
+[buzzer.c][64] turn the buzzer on 
+[uart_control.c][32] wrting train arrive to esp
+[distance_sensor.c][105]train Departing......
+[distance_sensor.c][106]Distance= 5
+
+[main.c][176] msg id: 5, data: 0 pushed:2 processed :2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[main.c][159] sensor has detected train arrive 
+[main.c][72] buzzer train arr
+[buzzer.c][64] turn the buzzer on 
+[uart_control.c][27] wrting train arrive to esp
+[distance_sensor.c][64]train arriving......
+[distance_sensor.c][65]Distance= 4 
+
+[distance_sensor.c][112]Change last known state for sensor 2
+[main.c][176] msg id: 4, data: 0 pushed:3 processed :3
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[main.c][164] sensor has detected train depart 
+[main.c][94] buzzer train dep
+[buzzer.c][64] turn the buzzer on 
+[uart_control.c][32] wrting train arrive to esp
+[distance_sensor.c][105]train Departing......
+[distance_sensor.c][106]Distance= 4
+
+[main.c][176] msg id: 4, data: 0 pushed:4 processed :4
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[main.c][159] sensor has detected train arrive 
+[main.c][72] buzzer train arr
+[buzzer.c][64] turn the buzzer on 
+[uart_control.c][27] wrting train arrive to esp
+[distance_sensor.c][64]train arriving......
+[distance_sensor.c][65]Distance= 5 
+
+[distance_sensor.c][112]Change last known state for sensor 2
+[main.c][176] msg id: 5, data: 0 pushed:5 processed :5
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[main.c][164] sensor has detected train depart 
+[main.c][94] buzzer train dep
+[buzzer.c][64] turn the buzzer on 
+[uart_control.c][32] wrting train arrive to esp
+[distance_sensor.c][105]train Departing......
+[distance_sensor.c][106]Distance= 6
+
+[main.c][176] msg id: 6, data: 0 pushed:6 processed :6
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[main.c][159] sensor has detected train arrive 
+[main.c][72] buzzer train arr
+[buzzer.c][64] turn the buzzer on 
+[uart_control.c][27] wrting train arrive to esp
+[distance_sensor.c][64]train arriving......
+[distance_sensor.c][65]Distance= 4 
+
+[distance_sensor.c][112]Change last known state for sensor 2
+[main.c][176] msg id: 4, data: 0 pushed:7 processed :7
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[gpio_control.c][186] val is 0
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[main.c][164] sensor has detected train depart 
+[main.c][94] buzzer train dep
+[buzzer.c][64] turn the buzzer on 
+[uart_control.c][32] wrting train arrive to esp
+[distance_sensor.c][105]train Departing......
+[distance_sensor.c][106]Distance= 6
+
+[main.c][176] msg id: 6, data: 0 pushed:8 processed :8
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[main.c][159] sensor has detected train arrive 
+[main.c][72] buzzer train arr
+[buzzer.c][64] turn the buzzer on 
+[uart_control.c][27] wrting train arrive to esp
+[distance_sensor.c][64]train arriving......
+[distance_sensor.c][65]Distance= 4 
+
+[distance_sensor.c][112]Change last known state for sensor 2
+[main.c][176] msg id: 4, data: 0 pushed:9 processed :9
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 1
+[main.c][148] panic button activity val:1 
+[main.c][48] panic button pressed[buzzer.c][64] turn the buzzer on 
+[uart_control.c][37] wrting train arrive to esp
+[main.c][176] msg id: 1, data: 0 pushed:0 processed :0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[main.c][148] panic button activity val:0 
+[main.c][65] panic button pressed[main.c][176] msg id: 0, data: 0 pushed:1 processed :1
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[main.c][164] sensor has detected train depart 
+[main.c][94] buzzer train dep
+[buzzer.c][64] turn the buzzer on 
+[uart_control.c][32] wrting train arrive to esp
+[distance_sensor.c][105]train Departing......
+[distance_sensor.c][106]Distance= 6
+
+[gpio_control.c][186] val is 0
+[main.c][176] msg id: 6, data: 0 pushed:2 processed :2
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[main.c][159] sensor has detected train arrive 
+[main.c][72] buzzer train arr
+[buzzer.c][64] turn the buzzer on 
+[uart_control.c][27] wrting train arrive to esp
+[distance_sensor.c][64]train arriving......
+[distance_sensor.c][65]Distance= 4 
+
+[distance_sensor.c][112]Change last known state for sensor 2
+[main.c][176] msg id: 4, data: 0 pushed:3 processed :3
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[gpio_control.c][186] val is 0
+[gpio_control.c][186] val is 0
+[distance_sensor.c][71]Change last known state for sensor 1
+[distance_sensor.c][112]Change last known state for sensor 2
+[

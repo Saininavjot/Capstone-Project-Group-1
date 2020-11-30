@@ -142,7 +142,7 @@ results buzzer_thread_push_to_queue(buzzer_thread_msg buffer)
     }
     else
     {
-        perror("push to main queue failed");
+        perror("buzzer: push to queue failed");
         return ERROR;
     }
 }

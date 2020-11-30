@@ -183,7 +183,7 @@ int gpio_control_read_value(int pin, int* value)
 		*value = 0;
 	}
 
-    printf("[%s][%d] val is %d\r\n",__FILE__, __LINE__, *value);
+    //printf("[%s][%d] val is %d\r\n",__FILE__, __LINE__, *value);
     
     close(fd);
     return 1;

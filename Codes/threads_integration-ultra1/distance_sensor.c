@@ -19,14 +19,13 @@ clock_t before_pulse, end_pulse,difference, distance; // To store Time to calcul
 
 int cflag = 1; // Flag to stabilize count
 
-int sensor1_last_state = 0, sensor1_last_state = 0;
+int sensor1_last_state = 0, sensor2_last_state = 0;
 
 // static functions
 static void *distance_sensor_thread(void* thread)
 {
-    int last_known_state = 0;
+    //int last_known_state = 0;
     main_thread_msg msg;
-    msg.msg_id = main_thread_sensor_activity;
 
     printf("[%s][%d] inside distance sensor thread\r\n",__FILE__, __LINE__);
 
@@ -53,7 +52,7 @@ static void *distance_sensor_thread(void* thread)
         distance = (difference/2)/30; // calculating approximate value in centimeters
 
         // If distance is between 80-90cms....approximate distance of train from sensor
-        if ( distance >= 4 && distance <= 6)
+        if ( distance >= 3 && distance <= 7)
         {
             if (sensor1_last_state != 1)
             {
@@ -69,8 +68,11 @@ static void *distance_sensor_thread(void* thread)
         }
         else
         {
-            printf("[%s][%d]Change last known state for sensor 1\r\n",  __FILE__, __LINE__);
-            sensor1_last_state = 0;
+        	if (sensor1_last_state != 0)
+        	{
+        		printf("[%s][%d]Change last known state for sensor 1\r\n",  __FILE__, __LINE__);
+        		sensor1_last_state = 0;
+        	}
         }
         
 
@@ -95,7 +97,7 @@ static void *distance_sensor_thread(void* thread)
         distance = (difference/2)/30; // calculating approximate value in centimeters
 
         // If distance is between 80-90cms....approximate distance of train from sensor
-        if (distance >= 4 && distance <= 6)
+        if (distance >= 3 && distance <= 7)
         {
             if (sensor2_last_state != 1)
             {
@@ -110,11 +112,13 @@ static void *distance_sensor_thread(void* thread)
         }
         else
         {
-            printf("[%s][%d]Change last known state for sensor 2\r\n",  __FILE__, __LINE__);
-            sensor2_last_state = 0;
+        	if (sensor2_last_state != 0)
+        	{
+        		printf("[%s][%d]Change last known state for sensor 2\r\n",  __FILE__, __LINE__);
+        		sensor2_last_state = 0;
+        	}
         }
         
-
         pin_low(8,9); // setting trigger low for next senses
         iolib_delay_ms(500);  // delay to settle trigger and Echo
 
@@ -137,6 +141,7 @@ results distance_sensor_thread_init(void)
     iolib_setdir(SENSOR_2_PORT, SENSOR_2_TRIGGER, DigitalOut);  // Setting Pin 10 or Port 8 as Output for Sensor trigger
     iolib_setdir(SENSOR_2_PORT, SENSOR_2_ECHO, DigitalIn);    // Setting Pin 9 or Port 8 as Inputfor Sensor echo
 
+    sleep(1);
     printf("[%s][%d] creating dist sensor thread \r\n", __FILE__, __LINE__);
 
     // create thread
@@ -149,11 +154,6 @@ results distance_sensor_thread_init(void)
     else
     {
         printf("[%s][%d] success creating thread\r\n",__FILE__, __LINE__);
-    }
-
-    while(1)
-    {
-        sleep(2);
     }
 
     return 1;

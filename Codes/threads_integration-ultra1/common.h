@@ -29,6 +29,7 @@ typedef enum{
 // thread queue size
 #define MAIN_THREAD_QUEUE_SIZE          10
 #define BUZZER_THREAD_QUEUE_SIZE        10
+#define STEPPER_MOTOR_QUEUE_SIZE		10
 
 #define BUZZER_GPIO_PIN     45  //port 8 pin 11 of BBB
 #define SWITCH_GPIO_PIN     44  //port 8 pin 12 of BBB

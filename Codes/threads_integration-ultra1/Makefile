@@ -8,8 +8,8 @@ FILE_FLAGS = $(CC) $(LIB) $(CFLAGS)
 
 all: train_project
 
-train_project: main.o push_button.o gpio_control.o buzzer.o distance_sensor.o uart_control.o
-	$(CC) $(LIB) distance_sensor.o push_button.o gpio_control.o buzzer.o uart_control.o main.o -o train_project.o
+train_project: main.o push_button.o gpio_control.o buzzer.o distance_sensor.o uart_control.o stepper_motor.o
+	$(CC) distance_sensor.o push_button.o gpio_control.o buzzer.o uart_control.o stepper_motor.o main.o $(LIB) -o train_project.o
 
 main.o:	main.c
 	$(FILE_FLAGS) main.c
@@ -29,5 +29,9 @@ distance_sensor.o: distance_sensor.c
 uart_control.o: uart_control.c
 	$(FILE_FLAGS) uart_control.c
 
+stepper_motor.o: stepper_motor.c
+	$(FILE_FLAGS) stepper_motor.c
+
 clean:
 	rm -rf *o main
+	rm -rf *out

@@ -3,19 +3,19 @@
 #include <stdlib.h>  //header defines several general purpose functions including dynamic memory management
 #include <unistd.h>  //header file that provides access to the POSIX operating system API
 #include <string.h>  //header defines functions for manipulating arrays of characters.
-
+#include <stdio.h>
 #include "main.h"
 #include "common.h"
 #include "uart_control.h"
 
 int send_msg_uart(uart_list uart, uart_msg msg, int data)
 {
-    int fd;
-    char val[20];
+    int fd = 0;
+//    char val[20];
 
     if (uart == ESP_UART || uart == BOTH_UART)
     {
-        int fd= open(UART4_PATH, O_RDWR);   //opening the file ttyO4 to read and write value
+        fd= open(UART4_PATH, O_RDWR);   //opening the file ttyO4 to read and write value
         if (fd== -1)
         {
             perror("error open file");  //error if we are unable to open ttyO4 due to any reason
@@ -35,13 +35,15 @@ int send_msg_uart(uart_list uart, uart_msg msg, int data)
         else if(msg == uart_msg_train_panic)
         {
             printf("[%s][%d] wrting train arrive to esp\r\n", __FILE__, __LINE__);
-            write(fd, "P", 1);    //transmitting "D"  to uart ttyO4
+            write(fd, "p", 1);    //transmitting "D"  to uart ttyO4
         }
+        close(fd);
     }
     if (uart == ARDUINO_UART || uart == BOTH_UART)
     {
         // add code for lcd
+
     }
 
-    close(fd);
+    return SUCCESS;
 }

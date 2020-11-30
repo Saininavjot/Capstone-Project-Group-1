@@ -1,0 +1,18 @@
+
+CC = gcc
+LIB = -liobb -lpthread -lrt
+
+CFLAGS = -c -Wall
+
+FILE_FLAGS = $(CC) $(LIB) $(CFLAGS)
+
+all: test
+
+test: ultra_sensor_test.o
+	$(CC) ultra_sensor_test.o $(LIB) -o test.out
+
+ultra_sensor_test.o:	ultra_sensor_test.c
+	$(FILE_FLAGS) ultra_sensor_test.c
+
+clean:
+	rm -rf *o main
