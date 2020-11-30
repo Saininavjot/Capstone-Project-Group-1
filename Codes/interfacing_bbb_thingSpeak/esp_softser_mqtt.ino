@@ -1,10 +1,10 @@
-#include <PubSubClient.h>
-#include <ESP8266WiFi.h>
-#include <SoftwareSerial.h>
+#include <PubSubClient.h>    // header file that allows to send and receive MQTT messages. 
+#include <ESP8266WiFi.h>     // provides ESP8266 specific Wi-Fi routines that we are calling to connect to the network.
+#include <SoftwareSerial.h>  // allow serial communication on other digital pins 
 
 
-#define D5 (14)
-#define D6 (12)
+#define D5 (14)   //Digital pin used as RX
+#define D6 (12)   //Digital pin used as TX
 #define TX (1)
 
 #define BAUD_RATE 9600
